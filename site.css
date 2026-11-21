@@ -239,3 +239,17 @@ footer nav { display: flex; gap: 22px; } footer a:hover { color: var(--ink); }
 /* Gallery: the App Store slides */
 .store-shot { display: block; width: min(300px, 72vw); height: auto; border-radius: 28px; box-shadow: 0 40px 80px -30px rgba(120,30,70,.45); transition: transform .8s var(--ease); }
 .store-shot:hover { transform: translateY(-10px); }
+
+/* Privacy policy */
+.legal { max-width: 720px; margin: 0 auto; padding: 130px 24px 90px; overflow-wrap: anywhere; }
+.legal h1 { font-size: clamp(38px, 7vw, 60px); line-height: 1.04; letter-spacing: -.04em; margin: 8px 0 12px; }
+.legal h2 { font-size: 23px; line-height: 1.2; letter-spacing: -.02em; margin: 40px 0 10px; }
+.legal p, .legal li { color: var(--mute); font-size: 17px; line-height: 1.6; }
+.legal p + p { margin-top: 12px; }
+.legal ul { margin: 12px 0 0; padding-left: 22px; display: grid; gap: 8px; }
+.legal li b { color: var(--ink); }
+.legal a { color: var(--peri); text-decoration: underline; text-underline-offset: 3px; }
+.legal-date { font-size: 14px !important; }
+.legal-short { margin-top: 32px; padding: 26px; border-radius: 24px; background: var(--soft); border: 1px solid var(--line); }
+.legal-short h2 { margin-top: 0; }
+.legal-short p { color: var(--ink); }
