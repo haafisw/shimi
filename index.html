@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shimi: Every picture deserves to shine</title>
+<meta name="description" content="Shimi is an AI photo and video studio for iPhone and Mac. Upscale, clean up, erase, cut out and make perfect wallpapers, all on your device.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0c0e" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Shimi: Every picture deserves to shine">
+<meta property="og:description" content="AI photo and video enhancing for iPhone and Mac. On your device, nothing uploaded.">
+<meta property="og:image" content="assets/shimi-film.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="site.css?v=20261121c">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img class="logo" src="assets/logo.png" alt="" width="28" height="28">Shimi</a>
+    <nav class="nav-links">
+      <a href="#how">How it works</a><a href="#features">Features</a><a href="#mac">Mac</a><a href="#pricing">Pricing</a><a href="#privacy">Privacy</a><a href="#support">FAQ</a>
+    </nav>
+    <a class="btn btn-ink btn-sm" href="#final">Get Shimi</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="rings" aria-hidden="true" style="top:250px">
+      <span style="width:220px;height:220px"></span><span style="width:340px;height:340px;animation-delay:.6s"></span><span style="width:480px;height:480px;animation-delay:1.2s"></span>
+    </div>
+    <div class="wrap">
+      <img class="logo hero-logo" id="heroMark" src="assets/logo.png" alt="Shimi logo" width="96" height="96">
+      <h1 class="display words" data-words>Every picture deserves to <span class="accent">shine.</span></h1>
+      <p class="lede rv" style="--d:.35s">Shimi sharpens, cleans and upscales your photos and videos with Apple's on-device AI, on iPhone and Mac.</p>
+      <div class="cta rv" style="--d:.5s">
+        <a class="btn btn-ink" href="#final">Coming soon to the App Store</a>
+        <a class="btn btn-ghost" href="#how">See how it works <span class="arr">→</span></a>
+      </div>
+      <p class="note rv" style="--d:.6s">For iPhone and Mac · No account · Nothing uploaded</p>
+    </div>
+    <div class="stage" id="stage">
+      <div class="phone p-left" data-par="-0.10" data-img="assets/4-enhance-light.jpg"></div>
+      <div class="phone p-center dark" data-par="0" data-img="assets/2-home-dark.jpg"></div>
+      <div class="phone p-right dark" data-par="-0.10" data-img="assets/5-wallpaper.jpg"></div>
+      <div class="chip" data-par="-0.22" style="left:calc(50% - 470px);top:470px">
+        <span class="ico pos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+        <span><b>Up to 12× upscale</b><small>Sharper, colours kept</small></span>
+      </div>
+      <div class="chip" data-par="-0.30" style="left:calc(50% + 390px);top:430px">
+        <span class="ico peri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="3"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span>
+        <span><b>On your device</b><small>Nothing uploaded</small></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="film-sec" id="film">
+    <div class="film" id="film-frame">
+      <video id="filmVideo" src="assets/shimi-film.mp4" poster="assets/shimi-film.jpg" muted loop playsinline preload="metadata"></video>
+      <button class="sound" id="soundBtn" aria-label="Turn sound on">
+        <svg id="sndOff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
+        <svg id="sndOn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 010 7M19 5a10 10 0 010 14"/></svg>
+      </button>
+    </div>
+    <p class="film-cap rv">The Shimi film · 15 seconds</p>
+  </section>
+
+  <!-- Story: a soft picture turns sharp as you scroll -->
+  <section class="story" id="how">
+    <div class="pin">
+      <div>
+        <p class="eyebrow rv">How it works</p>
+        <h2 class="display rv" style="--d:.1s">Watch it come <span class="accent">into focus.</span></h2>
+        <p class="lede rv" style="--d:.2s;margin-top:22px">Shimi measures each picture, cleans the noise, then rebuilds the detail with Apple's AI. Colours stay as they were unless you choose otherwise.</p>
+        <div class="count rv" style="--d:.3s">
+          <div><b id="cScale">1×</b><span>Upscale</span></div>
+          <div><b id="cWidth">640</b><span>Pixels wide</span></div>
+          <div><b>0</b><span>Photos uploaded</span></div>
+        </div>
+      </div>
+      <div class="compare rv" style="--d:.15s" id="compare">
+        <img src="assets/story-after.jpg" alt="The picture after Shimi, crisp and clean" loading="lazy">
+        <img id="cmpBefore" src="assets/story-before.jpg" alt="The same picture before, blurry and noisy" loading="lazy">
+        <i id="cmpLine"></i>
+        <span class="cmp-tag l">After</span><span class="cmp-tag r">Before</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow rv">Features</p>
+        <h2 class="display rv" style="--d:.08s">One app.<br>Every fix.</h2>
+        <p class="lede rv" style="--d:.16s">A small studio that does the careful work and stays simple to use.</p>
+      </div>
+      <div class="bento">
+        <article class="tile t-4 rv">
+          <span class="ico peri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></span>
+          <h3>Enhance, with an AI pick.</h3>
+          <p>Shimi looks at each photo and suggests a scene and size. One tap, then compare before and after.</p>
+          <div class="shot"><img src="assets/4-enhance-light.jpg" alt="Shimi's Enhance editor" loading="lazy"></div>
+        </article>
+        <article class="tile t-2 peri rv" style="--d:.08s">
+          <span class="ico" style="background:rgba(255,255,255,.2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4zM9 6v12M15 6v12"/></svg></span>
+          <h3>Video, too.</h3>
+          <p>Upscale to 4K, double the frame rate and compress. Your format stays the same.</p>
+          <div class="big-num fps" style="margin-top:26px">30→60</div><p>frames per second</p>
+        </article>
+        <article class="tile t-3 rv">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0114 0"/></svg></span>
+          <h3>Remove any background.</h3>
+          <p>Lift the subject onto transparency, a colour, a soft blur or a clean product shot.</p>
+          <div class="plats"><span>Clear</span><span>Colour</span><span>Blur</span><span>Product</span></div>
+        </article>
+        <article class="tile t-3 rv" style="--d:.08s">
+          <span class="ico pos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20l-5-5L14 4l7 7-9 9H8zM3 20h18"/></svg></span>
+          <h3>Erase what doesn't belong.</h3>
+          <p>Brush over a mark, tap an object or clear all the text. The gap fills in from its surroundings.</p>
+          <div class="plats"><span>Brush</span><span>Tap</span><span>Text</span></div>
+        </article>
+        <article class="tile t-2 dark rv">
+          <span class="ico" style="background:rgba(255,255,255,.12)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="3"/></svg></span>
+          <h3>Perfect wallpapers.</h3>
+          <p>Place, rotate and recolour for your exact screen.</p>
+          <div class="shot" style="width:150px;right:-30px;top:190px;transform:rotate(-8deg)"><img src="assets/5-wallpaper.jpg" alt="Shimi's wallpaper editor" loading="lazy"></div>
+        </article>
+        <article class="tile t-4 rv" style="--d:.08s">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg></span>
+          <h3>Whole sets, and every person.</h3>
+          <p>Batch-enhance a set of photos, give each face in a group its own touch-up, restore old prints and match colours from another picture.</p>
+          <div style="display:flex;gap:40px;margin-top:30px;flex-wrap:wrap">
+            <div><div class="big-num"><span data-count="20">0</span></div><p>photos per batch on iPhone</p></div>
+            <div><div class="big-num"><span data-count="7">0</span></div><p>scene looks</p></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="mac" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow rv">Also on Mac</p>
+        <h2 class="display rv" style="--d:.08s">One Shimi.<br>A bigger canvas.</h2>
+        <p class="lede rv" style="--d:.16s">The same engine on your Mac, with a sidebar of tools and room to see every detail.</p>
+      </div>
+      <img class="mac" id="macShot" src="assets/mac.png" alt="Shimi for Mac" loading="lazy">
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:60px;padding-bottom:80px">
+    <div class="wrap"><div class="sec-head" style="margin-bottom:30px"><p class="eyebrow rv">A closer look</p><h2 class="display rv" style="--d:.08s">Made with care.</h2></div></div>
+    <div class="rail" id="rail">
+      <figure class="rv" style="--d:0.00s"><img class="store-shot" src="assets/store-1.jpg" alt="Every picture, made to shine. Shimi home screen with every tool." width="660" height="1434" loading="lazy" decoding="async"></figure>
+      <figure class="rv" style="--d:0.06s"><img class="store-shot" src="assets/store-2.jpg" alt="Sharper detail, up to 12×. Shimi Enhance screen with upscale sizes." width="660" height="1434" loading="lazy" decoding="async"></figure>
+      <figure class="rv" style="--d:0.12s"><img class="store-shot" src="assets/store-3.jpg" alt="Wallpapers that fit. Shimi wallpaper editor with colour styles." width="660" height="1434" loading="lazy" decoding="async"></figure>
+      <figure class="rv" style="--d:0.18s"><img class="store-shot" src="assets/store-4.jpg" alt="Erase the clutter. Shimi Eraser with Brush, Tap and Text." width="660" height="1434" loading="lazy" decoding="async"></figure>
+      <figure class="rv" style="--d:0.24s"><img class="store-shot" src="assets/store-5.jpg" alt="A whole set, in one tap. Shimi Batch screen with five photos." width="660" height="1434" loading="lazy" decoding="async"></figure>
+      <figure class="rv" style="--d:0.30s"><img class="store-shot" src="assets/store-6.jpg" alt="Your photos stay yours. Shimi home screen showing On-device." width="660" height="1434" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section class="sec" id="pricing" style="padding-top:96px">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow rv">Pricing</p>
+        <h2 class="display rv" style="--d:.08s">Start free.<br>Go further with Pro.</h2>
+        <p class="lede rv" style="--d:.16s">The everyday tools stay free. Pro on iPhone adds bigger upscales, batches and video.</p>
+      </div>
+      <div class="plans">
+        <article class="plan rv">
+          <h3>Free</h3>
+          <div class="price">$0</div>
+          <div class="per">No account needed</div>
+          <div class="sub"></div>
+          <ul class="plan-list"><li>Enhance 2× and 4×</li><li>All scene looks</li><li>Wallpaper studio</li><li>Remove BG and Eraser</li></ul>
+        </article>
+        <article class="plan rv" style="--d:.06s">
+          <h3>Monthly</h3>
+          <div class="price">$3.99</div>
+          <div class="per">per month</div>
+          <div class="sub"></div>
+          <ul class="plan-list"><li>8× and 12× upscaling</li><li>Batch up to 20 photos</li><li>Video upscaling to 4K</li><li>Cancel anytime</li></ul>
+        </article>
+        <article class="plan hot rv" style="--d:.12s">
+          <span class="tag">Popular</span>
+          <h3>Yearly</h3>
+          <div class="price">$24.99</div>
+          <div class="per">per year</div>
+          <div class="sub">$2.08 a month, save 48%</div>
+          <ul class="plan-list"><li>Everything in Monthly</li><li>7-day free trial for eligible new subscribers</li></ul>
+        </article>
+        <article class="plan rv" style="--d:.18s">
+          <span class="tag ink">Best value</span>
+          <h3>Lifetime</h3>
+          <div class="price">$49.99</div>
+          <div class="per">one-time</div>
+          <div class="sub"></div>
+          <ul class="plan-list"><li>Everything in Monthly</li><li>Pay once, no renewals</li></ul>
+        </article>
+      </div>
+      <p class="plan-note rv">Coming soon to the App Store. Prices are in US dollars, and the App Store shows your local price. Monthly and Yearly renew automatically unless cancelled at least 24 hours before the period ends.</p>
+    </div>
+  </section>
+
+  <section class="privacy-band" id="privacy">
+    <p class="eyebrow rv" style="color:#ff9cc2">Private by design</p>
+    <h2 class="display rv" style="--d:.08s">Your pictures stay<br>on your device.</h2>
+    <p class="lede rv" style="--d:.16s">Shimi does its work with Apple's built-in AI, right on your iPhone or Mac. There's no account and nothing to upload.</p>
+    <div class="promises rv" style="--d:.24s"><span>No account</span><span>No uploads</span><span>No tracking</span><span>Works on device</span></div>
+  </section>
+
+  <section class="sec" id="support">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:40px">
+        <p class="eyebrow rv">FAQ</p>
+        <h2 class="display rv" style="--d:.08s">Questions, answered.</h2>
+      </div>
+      <div class="faq rv" style="--d:.12s">
+        <details><summary>What's free, and what needs Pro?</summary><div class="ans"><p>Enhance 2× and 4×, scene looks, Wallpaper, Remove BG and Eraser are free. On iPhone, Pro adds 8× and 12× upscaling, batches of up to 20 photos and video tools.</p></div></details>
+        <details><summary>Are my photos uploaded?</summary><div class="ans"><p>No. Enhancing, background removal, erasing and video all run on your iPhone or Mac.</p></div></details>
+        <details><summary>Will Shimi change my colours?</summary><div class="ans"><p>Clean-up and upscaling keep your colours. Looks like Colour match only apply when you turn them on.</p></div></details>
+        <details><summary>How big can results get?</summary><div class="ans"><p>You can choose 2×, 4×, 8× or 12×. On iPhone, results stop at 8192 pixels on the long side to stay within the phone's memory.</p></div></details>
+        <details><summary>Which file types does it open?</summary><div class="ans"><p>JPEG, HEIC, PNG, WEBP, GIF and RAW photos, plus MP4 and MOV video.</p></div></details>
+        <details><summary>Does a video keep its format?</summary><div class="ans"><p>Yes. An .mp4 stays an .mp4, and the original sound is kept.</p></div></details>
+        <details><summary>Can Shimi set my iPhone wallpaper directly?</summary><div class="ans"><p>iOS doesn't let apps do that. Shimi saves the finished wallpaper to Photos, and you set it from there with Share ▸ Use as Wallpaper.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" id="final">
+    <div class="wrap">
+      <img class="logo final-logo" id="finalMark" src="assets/logo.png" alt="" width="120" height="120">
+      <h2 class="display words" data-words>Make it <span class="accent">shine.</span></h2>
+      <div class="cta rv" style="--d:.3s;margin-top:40px"><span class="btn btn-ink">Coming soon to the App Store</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Shimi · AI photo and video studio for iPhone and Mac.</p>
+    <nav><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#support">FAQ</a></nav>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="site.js?v=20261121c"></script>
+</body>
+</html>
