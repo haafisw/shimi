@@ -278,3 +278,7 @@ footer nav { display: flex; gap: 22px; } footer a:hover { color: var(--ink); }
 }
 
 @media (max-width: 1340px) { .chip { display: none; } }
+
+/* Gallery: each App Store slide inside an iPhone */
+.rail .store-phone { --pw: min(300px, 74vw); }
+.store-phone .scr { background: #0b0b0e; }

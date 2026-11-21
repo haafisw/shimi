@@ -8,7 +8,7 @@
 
   // Phones: real app captures (they include their own status bar).
   $$('.phone[data-img]').forEach((p) => {
-    p.innerHTML = `<div class="scr"><i class="di" aria-hidden="true"></i><img src="${p.dataset.img}" alt="Shimi on iPhone" loading="lazy" decoding="async"></div>`;
+    p.innerHTML = `<div class="scr"><i class="di" aria-hidden="true"></i><img src="${p.dataset.img}" alt="${p.dataset.alt || 'Shimi on iPhone'}" loading="lazy" decoding="async"></div>`;
   });
 
   // Headline words rise one by one.
