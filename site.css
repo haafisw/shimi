@@ -284,3 +284,10 @@ footer nav { display: flex; gap: 22px; } footer a:hover { color: var(--ink); }
 .store-phone .scr { background: #0b0b0e; }
 
 .rail .phone { --pw: min(300px, 74vw); }
+
+/* Support contact */
+.support-card { max-width: 820px; margin: 44px auto 0; padding: 28px 30px; display: flex; align-items: center; justify-content: space-between; gap: 28px; border-radius: 24px; background: var(--soft); border: 1px solid var(--line); scroll-margin-top: 84px; }
+.support-card h3 { font-size: 23px; letter-spacing: -.02em; margin-bottom: 6px; }
+.support-card p { color: var(--mute); font-size: 15px; line-height: 1.5; max-width: 52ch; }
+.support-card .btn { flex: none; justify-content: center; text-align: center; }
+@media (max-width: 640px) { .support-card { flex-direction: column; align-items: stretch; text-align: center; padding: 24px 20px; gap: 18px; } .support-card p { max-width: none; } }
